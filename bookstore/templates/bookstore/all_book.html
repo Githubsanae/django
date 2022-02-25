@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看书</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>price</th>
+            <th>opj</th>
+        </tr>
+        {% for book in all_book %}
+            <tr>
+                <td>{{book.name}}</td>
+                <td>{{book.price}}</td>
+                <td>
+                    <a href="">更新</a>
+                    <a href="">删除</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
