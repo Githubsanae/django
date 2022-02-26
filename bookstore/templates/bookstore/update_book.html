@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update book</title>
+</head>
+<body>
+    <form action="/bookstore/update_book/{{book.id}}" method="post">
+        <p>
+            name <input type="text" value="{{book.name}}" disabled="disabled">
+        </p>
+        <p>
+            price <input type="text" value="{{book.price}}" name='price'>
+        </p>
+        <p>
+            <input type="submit" value="update">
+        </p>
+    </form>
+</body>
+</html>
